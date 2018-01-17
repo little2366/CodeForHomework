@@ -1,0 +1,157 @@
+import Foundation
+
+/*定义异常抛出*/
+enum OperationError : Error {
+    case ErrorMessage(String)
+}
+/*定义性别的枚举类型*/
+enum sexType: Int {
+	case male = 0
+	case female = 1
+}
+
+class person {
+	var firstName: String     //名字
+	var lastName: String      //姓氏
+	var birthday: Date        //出生日期
+	var address: String       //住址
+	var sex: sexType          //性别
+	
+	static var count: Int = 0
+	
+	/*构造函数*/
+	init(firstName: String, lastName: String, birthday: Date, address:String, sex: sexType)throws{
+		
+		/*输出总共有多少人*/
+		defer{
+			print("The sum of the person: \(person.count)")
+		}
+		
+		//获取birthday中的year
+		let calendar = Calendar.current
+        let year = calendar.component(.year, from: birthday)
+		if(year <= 2000 || year >= 2016) {
+			throw OperationError.ErrorMessage("ERROR: Year should from 2000 to 2016")
+		}
+		
+		self.firstName = firstName
+		self.lastName = lastName
+		self.birthday = birthday
+		self.address = address
+		self.sex = sex
+		/*静态变量的使用*/
+		person.count += 1
+    }
+	
+	/*计算属性年龄*/
+	func getAge() -> Int {
+		/*获取该person的出生年份*/
+		let calendar = Calendar.current
+        let year = calendar.component(.year, from: birthday)
+		/*获取当前年份*/
+		let currentDate = Date()
+        let yearNow = calendar.component(.year, from: currentDate)
+		return yearNow - year
+	}
+	
+	/*对象方法获取全名*/
+	func getFullName() -> String {
+		return self.firstName + " " + self.lastName
+	}
+	
+	/*判断两个人是否同名*/
+	func isSameName(temp:person) -> Bool {
+		return self.firstName == temp.firstName && self.lastName == temp.lastName
+	}
+	
+	/*判断是否为同一个人*/
+	func isSamePerson(temp:person) -> Bool {
+		return self.firstName == temp.firstName 
+		    && self.lastName == temp.lastName
+		    && self.birthday == temp.birthday
+		    && self.address == temp.address
+		    && self.sex == temp.sex
+	}
+	
+	/*下标访问对象的属性姓氏和名称*/
+    subscript(index: Int) -> String {
+        if(index == 0) {
+            return self.firstName
+        }
+        else {
+            return self.lastName
+        }
+    }
+}
+
+/*创建两个日期*/
+/*let calendar = Calendar.current
+var component1 = DateComponents()
+component1.year = 2016
+component1.day = 10
+component1.month = 11
+var birthday1 = calendar.date(from: component1)
+print(birthday1)*/
+
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "yyyy-MM-dd"
+let birthday1 = dateFormatter.date(from: "2003-05-28")
+let birthday2 = dateFormatter.date(from: "2008-08-08")
+
+var p1:person, p2:person
+try p1 = person(firstName: "Ann", lastName: "Han", birthday: birthday1!, address: "Beijing", sex: sexType.female)
+try p2 = person(firstName: "John", lastName: "Swift", birthday: birthday2!, address: "New York", sex: sexType.male)
+
+print("\(p1.getFullName())'s age is \(p1.getAge())")
+print(p1.sex.rawValue)
+print(p1.isSameName(temp:p2))
+print(p1.isSamePerson(temp:p2))
+print(p1[0] + " " + p1[1])
+
+
+/*test for invalid year*/
+let birthday3 = dateFormatter.date(from: "1997-07-14")
+var p3:person
+do {
+    try p3 = person(firstName: "Xiaohong", lastName: "Jiang", birthday: birthday3!, address: "Zhe Jiang", sex: sexType.female)
+} catch OperationError.ErrorMessage(let msg) {
+    print(msg)
+}	
+	static var count: Int = 0
+	
+	/*构造函数*/
+	init(firstName: String, lastName: String, birthday: Date, address:String, sex: sexType)throws{
+		defer{
+			print("The sum of the person: \(person.count)")
+		}
+		let calendar = Calendar.current
+        let year = calendar.component(.year, from: birthday)
+		if(year <= 2000 || year >= 2016) {
+			throw OperationError.ErrorMessage("ERROR: Year should from 2000 to 2016")
+		}
+		self.firstName = firstName
+		self.lastName = lastName
+		self.birthday = birthday
+		self.address = address
+		self.sex = sex
+		/*静态变量的使用*/
+		person.count += 1
+    }
+	
+	/*计算属性年龄*/
+	func getAge() -> Int {
+		/*获取该person的出生年份*/
+		let calendar = Calendar.current
+        let year = calendar.component(.year, from: birthday)
+		/*获取当前年份*/
+		return 
+	}
+}
+
+let calendar = Calendar.current
+var component1 = DateComponents()
+component1.year = 2016
+component1.day = 10
+component1.month = 11
+var birthday1 = calendar.date(from: component1)
+print(birthday1)
