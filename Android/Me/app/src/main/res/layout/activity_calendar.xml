@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!--顶部标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/mainColor">
+        <Button
+            android:id="@+id/back_to_punch"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-28dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="生长统计"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EDEDED">
+
+                <ImageButton
+                    android:id="@+id/img_select_last_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/img_select_next_month"
+                    android:background="?android:actionBarItemBackground"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_arrow_left_gray"/>
+
+                <TextView
+                    android:id="@+id/txt_select_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="14sp"
+                    android:text="2017-12"/>
+
+                <ImageButton
+                    android:id="@+id/img_select_next_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-30dp"
+                    android:background="?android:actionBarItemBackground"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_arrow_rigth_gray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <cn.edu.hznu.me.WeekView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <cn.edu.hznu.me.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

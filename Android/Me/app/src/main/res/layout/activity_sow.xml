@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!--顶部标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/mainColor">
+        <Button
+            android:id="@+id/back_to_market"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-28dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="播种"/>
+        <TextView
+            android:id="@+id/finish_sow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-60dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="完成"/>
+    </LinearLayout>
+
+    <!--中间的主体部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/quotation_mark"/>
+            <EditText
+                android:id="@+id/add_note"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="记录一下"
+                android:gravity="top|left"
+                android:background="@null"
+                android:maxHeight="120dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/add_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_dash_line">
+            <ImageView
+                android:id="@+id/sow_img"
+                android:layout_width="265dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/camera"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--下面的定位和图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentBottom = "true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/earth"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

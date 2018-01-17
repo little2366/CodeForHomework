@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Seed</string>
+    <item name="bottom" type="id"></item>
+    <string name="notice1">   种子商城中已有的种子，是免费提供的。点击该种子，就可以进行播种，成为自己的一种习惯。如果想要研发属于...</string>
+    <string name="passage1">&#160;&#160;&#160;&#160;种子商城中已有的种子，是免费提供的。点击该种子，就可以进行播种，成为自己的一种习惯。如果想要研发属于自己的种子，每次需要花费20个种子币。当然，起初用户是有66个种子币的。但你总不能只花钱不赚钱吧。只要每天打卡一个习惯，就可以领取1个种子币，还是挺好赚的。但是要讲诚信，所有的事情要真的完成了再打卡哦！</string>
+    <string name="notice2">不知道从什么时候起，不管三七二十一开始变得流行起来。21这个神奇的数字好像带来神奇的力量...</string>
+    <string name="passage2_par1">不知道从什么时候起，不管三七二十一开始变得流行起来。21这个神奇的数字好像带来神奇的力量</string>
+    <string name="passage2_par2">这种理论认为一个人习惯的养成，要分三个阶段，共21天</string>
+    <string name="passage2_par3">第一个阶段：第1～7天，这个阶段特征是“刻意、不自然”</string>
+    <string name="passage2_par4">第二个阶段：第8～14天，这个阶段特征是“刻意、自然”</string>
+    <string name="passage2_par5">第三个阶段：第15～21天，这个阶段特征是“不刻意、自然”</string>
+    <string name="passage2_par6">到达第三个阶段，也就跨入了“习惯性的稳定期”。也就是说这个习惯将在未来的人生中为你服务，而你需要做的，就是把这21天跨越过去。</string>
+    <string name="passage2_par7">可是，不好的“习惯”养成，何必需要21天！有时候，只需一念之间。</string>
+    <string name="passage2_par8">所以，习惯并不是一朝一夕能够养成的，也不是21天这个时间段就一定能够形成的，1万个小时机械的堆积，也是没有成效的。</string>
+</resources>
