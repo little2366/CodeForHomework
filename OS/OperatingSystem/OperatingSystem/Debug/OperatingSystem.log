@@ -1,0 +1,13 @@
+﻿生成启动时间为 2017/12/30 19:35:55。
+     1>项目“C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\OperatingSystem\OperatingSystem.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS安装\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /D _CRT_SECURE_NO_WARNINGS OperatingSystem.cpp
+         OperatingSystem.cpp
+       Link:
+         D:\VS安装\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\Debug\OperatingSystem.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\Debug\OperatingSystem.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\Debug\OperatingSystem.lib" /MACHINE:X86 Debug\OperatingSystem.obj
+         OperatingSystem.vcxproj -> C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\Debug\OperatingSystem.exe
+     1>已完成生成项目“C:\Users\asus\Documents\操作系统\大作业\3个实验\OperatingSystem\OperatingSystem\OperatingSystem.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.55
