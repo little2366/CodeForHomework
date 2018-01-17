@@ -1,0 +1,20 @@
+#loginPane {
+    -fx-background-color: #FFFFFF;
+}
+
+#stuInsResult .table-cell {
+    -fx-alignment: CENTER;
+}
+
+#insStuResult .table-cell {
+    -fx-alignment: CENTER;
+}
+#adminStu .table-cell {
+    -fx-alignment: CENTER;
+}
+#adminIns .table-cell {
+    -fx-alignment: CENTER;
+}
+#adminPair .table-cell {
+    -fx-alignment: CENTER;
+}
