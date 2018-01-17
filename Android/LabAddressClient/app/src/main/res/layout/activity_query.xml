@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="选择查询的方式："/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="按姓名" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按手机号码" >
+        </RadioButton>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="输入关键字："/>
+        <EditText
+            android:id="@+id/keyWord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/queryData"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="查找"/>
+
+</LinearLayout>

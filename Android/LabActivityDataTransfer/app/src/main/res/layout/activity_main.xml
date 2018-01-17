@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">      <!--tableout的第二列设置为可扩展，如果列数没有布满整个屏幕，则其余空间都被第二列占据，自动拉伸已填充屏幕，就像fill_parent一样-->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp" />
+
+    <!--用户名-->
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textSize="16sp"/>
+        <!--定义一个EditText,用于搜集用户的账号-->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/forUser"
+            android:selectAllOnFocus="true"/>
+    </TableRow>
+
+    <!--密码-->
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd"
+            android:textSize="16sp"/>
+        <!--用于搜集用户的密码-->
+        <EditText
+            android:id="@+id/passwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"/>
+    </TableRow>
+
+    <!--性别-->
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="16sp"/>
+        <!--定义一组单选框，用于搜集用户注册的性别-->
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textSize="16sp"/>
+        </RadioGroup>
+    </TableRow>
+
+    <!--注册按钮-->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height ="wrap_content"
+        android:text="@string/register"
+        android:textSize="16sp"/>
+
+</TableLayout>

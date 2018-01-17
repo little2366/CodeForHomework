@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LabActivityDataTransfer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--将所有的中文文本数据都定义成字符串-->
+    <string name="title">请输入您的注册信息</string>
+    <string name="user">用户名：</string>
+    <string name="forUser">请填写想要注册的账号</string>
+    <string name="passwd">密码：</string>
+    <string name="gender">性别：</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+</resources>

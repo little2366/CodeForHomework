@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部title-->
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#298CCF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/main_title_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:text="今日已完成订单"
+            android:layout_weight="2.20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#EFEFF4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:text="查询结果(1)"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:text="下拉刷新，上拉加载更多结果"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cac9c9" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="订  单  号："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#298CCF"
+                    android:layout_gravity="center_vertical"
+                    android:text="EA59225584"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="35dp"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:text="姜晓红"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="车次信息："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#298CCF"
+                    android:text="12月21日 06:03开 杭州东-诸暨"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="订单时间："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:text="2017年12月5日 17:35"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="总张数："/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FF7F27"
+                    android:layout_marginRight="20dp"
+                    android:text="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cac9c9" />
+
+    </LinearLayout>
+
+    <!--底部主导航-->
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom = "true">
+        <Button
+            android:id="@+id/bottom_order_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="车票预订"/>
+        <Button
+            android:id="@+id/bottom_service_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="商旅服务"/>
+        <Button
+            android:id="@+id/bottom_query_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#4D4D4D"
+            android:textColor="#ffffff"
+            android:text="订单查询"/>
+        <Button
+            android:id="@+id/bottom_account_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:textColor="#ffffff"
+            android:text="我的账户"/>
+    </LinearLayout>
+
+
+</LinearLayout>
